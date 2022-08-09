@@ -17,8 +17,8 @@
 
 
 def int_to_roman(input):
-    if not 0 < input < 4000:
-        raise ValueError("Argument must be between 1 and 3999")
+    if not 0 < input < 3000:
+        raise ValueError("Argument must be between 1 and 2999")
     ints = (1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1)
     nums = ('M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I')
     result = []
@@ -29,4 +29,4 @@ def int_to_roman(input):
     return ''.join(result)
 
 
-print(int_to_roman(3487))
+print(int_to_roman(100))
